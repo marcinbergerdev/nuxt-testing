@@ -1,16 +1,24 @@
 <template>
-  <header>
-    <NuxtLink to="/">NuxtVerify</NuxtLink>
+  <header class="header-wrapper">
+    <NuxtLink to="/" class="header-logo">NuxtVerify</NuxtLink>
 
     <NavList />
-  
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
+<style scoped lang="scss">
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-<style scoped>
+  padding: 1rem;
+}
 
+.header-logo {
+  font-size: 1.8rem;
+  color: #00fff2;
+}
 </style>

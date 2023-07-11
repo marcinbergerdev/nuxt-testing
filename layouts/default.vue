@@ -1,20 +1,17 @@
 <template>
   <div class="app-container">
-
     <NavContainer />
 
     <slot />
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style lang="scss"> 
-.app-container{
+<style lang="scss">
+.app-container {
   width: 100%;
   height: 100vh;
-  background-color: #262a35;
+  background-color: #151f2c;
 }
 </style>

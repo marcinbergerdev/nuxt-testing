@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul>
+  <nav class="nav-container">
+    <ul class="nav-list">
       <NavItem
         v-for="(link, id) in links"
         :key="id"
@@ -25,4 +25,14 @@ const links = ref<Links[]>([
 ]);
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.nav-container {
+  flex: 1;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 2rem;
+}
+</style>
