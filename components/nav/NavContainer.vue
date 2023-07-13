@@ -1,7 +1,6 @@
 <template>
   <header class="header-wrapper">
-    <NuxtLink to="/" class="header-logo">NuxtVerify</NuxtLink>
-
+    <NuxtLink to="/" class="header-logo">NuxtLearning</NuxtLink>
     <NavList />
   </header>
 </template>
@@ -14,11 +13,11 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .header-logo {
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: #00fff2;
 }
 </style>

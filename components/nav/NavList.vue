@@ -22,6 +22,8 @@ const links = ref<Links[]>([
   { path: "/about", name: "about" },
   { path: "/study", name: "study" },
   { path: "/contact", name: "contact" },
+  { path: "/login", name: "login" },
+  { path: "/register", name: "signup" },
 ]);
 </script>
 
@@ -33,6 +35,6 @@ const links = ref<Links[]>([
 .nav-list {
   display: flex;
   justify-content: flex-end;
-  gap: 0 2rem;
+  gap: 0 3rem;
 }
 </style>
