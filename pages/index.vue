@@ -67,14 +67,14 @@
     padding: 1rem 2rem;
     font-size: 2rem;
     border-radius: 50px;
-    border: 2px solid #1c5e5b;
-    color: #1c5e5b;
+    border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
     transition: 0.15s ease-in-out;
 
     @media (width >= 1024px) {
       &:hover {
-        border: 2px solid #00fff2;
-        color: #00fff2;
+        border: 2px solid var(--light-blue);
+        color: var(--light-blue);
         transition: 0.15s ease-in-out;
       }
     }
@@ -83,7 +83,7 @@
 .introduction-header {
   align-self: center;
   font-size: 2rem;
-  color: #1c5e5b;
+  color: var(--dark-blue);
 
   @media (width >= 1024px) {
     align-self: flex-start;

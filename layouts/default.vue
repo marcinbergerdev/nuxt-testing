@@ -15,10 +15,10 @@
 <style scoped lang="scss">
 .app-container {
   width: 100%;
-  background-color: #151f2c;
+  background-color: var(--bg-color);
   @media (width >= 1024px) {
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
   }
 }
 .header-wrapper {

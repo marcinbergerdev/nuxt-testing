@@ -21,7 +21,7 @@ li:nth-child(5) {
     left: -1.5rem;
     width: 1px;
     height: 100%;
-    background-color: #1c5e5b;
+    background-color: var(--dark-blue);
   }
 }
 
@@ -29,11 +29,11 @@ li:nth-child(5) {
   display: block;
   padding: 1rem 2rem;
   font-size: 2rem;
-  color: #1c5e5b;
+  color: var(--dark-blue);;
 
   &.router-link-active {
-    color: #00fff2;
-    border-bottom: 1px solid #00fff2;
+    color: var(--light-blue);
+    border-bottom: 1px solid var(--light-blue);
     transition: 0.2s ease-in-out;
   }
   @media (width >= 768px) {

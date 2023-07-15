@@ -8,6 +8,6 @@
 <style scoped lang="scss">
 .header-logo {
   font-size: 3rem;
-  color: #00fff2;
+  color: var(--light-blue);
 }
 </style>
