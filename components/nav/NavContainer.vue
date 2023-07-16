@@ -1,5 +1,6 @@
 <template>
   <NuxtLink to="/" class="header-logo">NuxtLearning</NuxtLink>
+  <Hamburger />
   <NavList />
 </template>
 

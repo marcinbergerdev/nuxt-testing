@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+
 interface Links {
   path: string;
   name: string;

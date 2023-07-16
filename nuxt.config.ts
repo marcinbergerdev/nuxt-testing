@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
    devtools: { enabled: true },
    css: ["@/assets/scss/global.scss"],
-   modules: ["@vueuse/nuxt"],
-   app:{
-      pageTransition: {name: 'page', mode: 'out-in'}
-   }
+   modules: ["@pinia/nuxt"],
+   app: {
+      pageTransition: { name: "page", mode: "out-in" },
+   },
 });

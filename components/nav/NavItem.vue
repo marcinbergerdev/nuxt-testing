@@ -29,7 +29,7 @@ li:nth-child(5) {
   display: block;
   padding: 1rem 2rem;
   font-size: 2rem;
-  color: var(--dark-blue);;
+  color: var(--dark-blue);
 
   &.router-link-active {
     color: var(--light-blue);
