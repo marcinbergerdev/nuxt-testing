@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-container" v-if="isNavigation">
+  <nav :class="style">
     <ul class="nav-list">
       <NavItem
         v-for="(link, id) in links"
@@ -12,11 +12,15 @@
 </template>
 
 <script setup lang="ts">
+defineProps<{
+  style: string;
+}>();
 
 interface Links {
   path: string;
   name: string;
 }
+
 const links = ref<Links[]>([
   { path: "/", name: "home" },
   { path: "/about", name: "about" },
@@ -25,27 +29,25 @@ const links = ref<Links[]>([
   { path: "/login", name: "login" },
   { path: "/register", name: "signup" },
 ]);
-
-const isNavigation = ref(false);
-
-const checkUserWidth = () => {
-  innerWidth > 1024 ? (isNavigation.value = true) : (isNavigation.value = false);
-};
-
-onMounted(() => {
-  if (innerWidth >= 1024) isNavigation.value = true;
-  window.addEventListener("resize", checkUserWidth);
-});
 </script>
 
 <style scoped lang="scss">
-.nav-container {
+.desktop-nav {
   flex: 1;
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 3rem;
+  }
 }
 
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0 3rem;
+.mobile-nav {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem 0;
+    padding: 4rem 0;
+  }
 }
 </style>

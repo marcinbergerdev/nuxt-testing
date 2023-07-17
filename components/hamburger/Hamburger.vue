@@ -31,11 +31,11 @@ const isHamburgerActive = computed(() => {
 });
 
 const checkUserWidth = () => {
-  innerWidth <= 1024 ? (isHamburger.value = true) : (isHamburger.value = false);
+  innerWidth < 1024 ? (isHamburger.value = true) : (isHamburger.value = false);
 };
 
 onMounted(() => {
-  if (innerWidth <= 1024) isHamburger.value = true;
+  if (innerWidth < 1024) isHamburger.value = true;
   window.addEventListener("resize", checkUserWidth);
 });
 </script>
@@ -45,7 +45,7 @@ onMounted(() => {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  z-index: 100;
+  z-index: 150;
 
   display: flex;
   padding: 0.5rem;
