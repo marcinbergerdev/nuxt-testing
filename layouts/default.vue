@@ -18,11 +18,16 @@
 
 <script setup lang="ts">
 import { useMenuVisibility } from "../stores/menuVisibility";
+import { onBeforeRouteUpdate } from "nuxt/app";
 
 const menu = useMenuVisibility();
 
 const menuActivity = computed(() => {
   return { "menu-opened": menu.isActive };
+});
+
+onBeforeRouteUpdate(() => {
+  if (innerWidth < 1024) menu.closeMenu();
 });
 </script>
 

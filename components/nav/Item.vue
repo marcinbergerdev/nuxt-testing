@@ -1,23 +1,14 @@
 <template>
   <li>
-    <NuxtLink :to="path" class="nav-link" @click="closeMenuAfterRouteChange">
-      {{ name }}</NuxtLink
-    >
+    <NuxtLink :to="path" class="nav-link"> {{ name }}</NuxtLink>
   </li>
 </template>
 
 <script setup lang="ts">
-import { useMenuVisibility } from "../../stores/menuVisibility";
-
-const menu = useMenuVisibility();
 const { path, name } = defineProps<{
   path: string;
   name: string;
 }>();
-
-const closeMenuAfterRouteChange = () => {
-  if (innerWidth < 1024) menu.closeMenu();
-};
 </script>
 
 <style scoped lang="scss">
