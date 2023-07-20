@@ -18,6 +18,7 @@
 
 <script setup lang="ts">
 import { useMenuVisibility } from "../stores/menuVisibility";
+
 import { onBeforeRouteUpdate } from "nuxt/app";
 
 const menu = useMenuVisibility();
