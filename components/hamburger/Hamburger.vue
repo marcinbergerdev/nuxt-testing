@@ -50,7 +50,7 @@ onMounted(() => {
   display: flex;
   padding: 0.5rem;
   border: none;
-  background-color: var(--black);
+  background-color: transparent;
   border-radius: 35%;
   cursor: pointer;
 }

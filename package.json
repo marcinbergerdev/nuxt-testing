@@ -19,7 +19,7 @@
     "vue": "latest"
   },
   "dependencies": {
-    "@formkit/vue": "^0.18.0-23c4d8f",
+    "@formkit/nuxt": "^0.17.4",
     "@pinia/nuxt": "^0.4.11",
     "pinia": "^2.1.4"
   }
