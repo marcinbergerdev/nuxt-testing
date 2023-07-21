@@ -1,13 +1,13 @@
 <template>
   <section class="introduction-container">
     <article class="introduction-box">
-      <span class="introduction-box__logo">NuxtLearning</span>
+      <span class="introduction-box__logo">Nuxt&UnitTest</span>
       <NuxtLink class="introduction-box__link" to="/study">Get study</NuxtLink>
     </article>
 
     <article class="introduction-box">
       <header class="introduction-header">
-        <h2 class="introduction-header__title">Nuxt Learn</h2>
+        <h2 class="introduction-header__title">Nuxt & UnitTest</h2>
       </header>
 
       <p class="introduction-description">

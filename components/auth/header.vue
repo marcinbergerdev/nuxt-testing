@@ -10,5 +10,6 @@
 .back-link{
   text-align: end;
   font-size: 2rem;
+  color: var(--light-blue);
 }
 </style>

@@ -2,6 +2,7 @@
   <BaseFormRegister>
     <FormKit type="form" @submit="userSignIn">
       <h2 class="form-title">Log in</h2>
+
       <FormKit
         type="email"
         name="email"
@@ -9,6 +10,7 @@
         validation="required|*email"
         v-model="email"
       />
+
       <FormKit
         type="password"
         name="password"
@@ -36,6 +38,7 @@
         </div>
       </Transition>
     </Teleport>
+    
   </BaseFormRegister>
 </template>
 

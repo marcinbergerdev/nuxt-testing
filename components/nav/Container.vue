@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" class="header-logo">NuxtLearning</NuxtLink>
+  <NuxtLink to="/" class="header-logo">Nuxt&UnitTest</NuxtLink>
   <Hamburger />
   <BaseNavigation :style="'desktop-nav'" v-if="isNavigation" />
 </template>
