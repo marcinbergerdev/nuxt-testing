@@ -24,21 +24,7 @@
       />
     </FormKit>
 
-    <Teleport to="body">
-      <Transition name="modal" mode="out-in">
-        <div class="modal-container" v-if="isModal">
-          <dialog open>
-            <button class="modal-close" @click="closeModal">back</button>
-            <h2 class="modal-header">warning!</h2>
-            <p class="modal-description">
-              this project is only for Nuxt and Unit Test exercises, it does not have
-              login and registration logic
-            </p>
-          </dialog>
-        </div>
-      </Transition>
-    </Teleport>
-    
+    <ModalWarning :is-modal="isModal" @close="closeModal"></ModalWarning>
   </BaseFormRegister>
 </template>
 
