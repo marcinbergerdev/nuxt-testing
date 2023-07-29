@@ -10,7 +10,7 @@
       <NavContainer />
     </header>
 
-    <main class="homepage-wrapper">
+    <main class="main-wrapper">
       <slot />
     </main>
   </div>
@@ -63,14 +63,14 @@ onBeforeRouteUpdate(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-}
-.homepage-wrapper {
-  margin-top: 20rem;
-  height: calc(100% - 8.4rem); // 6.4rem = navigation
+  padding: 2.5rem;
 
   @media (width >= 1024px) {
-    margin: 0;
+    padding: 2rem;
   }
+}
+.main-wrapper {
+  height: calc(100% - 8.4rem); // 6.4rem = navigation
+  overflow-y: auto;
 }
 </style>

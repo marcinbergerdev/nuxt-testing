@@ -28,7 +28,11 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .header-logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--light-blue);
+
+  @media (width >= 300px) {
+    font-size: 3rem;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <section class="introduction-container">
     <article class="introduction-box">
       <span class="introduction-box__logo">Nuxt&UnitTest</span>
-      <NuxtLink class="introduction-box__link" to="/study">Get study</NuxtLink>
+      <NuxtLink class="introduction-box__link" to="/tests">Show Tests</NuxtLink>
     </article>
 
     <article class="introduction-box">
@@ -29,10 +29,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 65%;
+  gap: 25rem 0;
+  margin-top: 20rem;
 
   @media (width >= 1024px) {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
   }
 }
 
@@ -42,7 +47,7 @@
   justify-content: center;
   align-items: center;
   gap: 5rem 0;
-  margin-top: 20rem;
+  padding: 5rem 0;
 
   @media (width >= 1024px) {
     flex: 1;
@@ -94,6 +99,7 @@
   text-align: center;
   font-size: 1.7rem;
   padding: 0 3rem;
+  color: var(--text-dark);
 
   @media (width >= 300px) {
     padding: 0 5rem;

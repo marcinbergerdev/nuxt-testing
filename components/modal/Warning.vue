@@ -6,8 +6,8 @@
           <button class="modal-close" @click="emit('close')">back</button>
           <h2 class="modal-header">warning!</h2>
           <p class="modal-description">
-            this project is only for Nuxt and Unit Test exercises, it does not have login
-            and registration logic
+            this project is only for exercises, it does not have login and registration
+            base and logic.
           </p>
         </dialog>
       </div>
