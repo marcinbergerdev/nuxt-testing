@@ -31,7 +31,7 @@
   border-bottom: 1px solid var(--text-dark);
 
   @media (width >= 1024px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "form img"
