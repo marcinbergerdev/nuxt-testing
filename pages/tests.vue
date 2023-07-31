@@ -1,7 +1,7 @@
 <template>
   <ul class="tests-list">
     <li class="tests-content">
-      <ContentTestsForm />
+      <ContentForm />
     </li>
   </ul>
 </template>
