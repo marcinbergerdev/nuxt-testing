@@ -1,41 +1,42 @@
 <template>
   <ul class="tests-list">
-    <li class="tests-content">
-      <ContentForm />
-    </li>
+    <ContentTests
+      v-for="test in tests"
+      :title="test.title"
+      :description="test.description"
+      :images="test.images"
+    ></ContentTests>
   </ul>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+interface Tests {
+  title: string;
+  description: string;
+  images: string[];
+}
+
+const tests = ref<Tests[]>([
+  {
+    title: "Numbers Validation",
+    description: `The project in JavaScript/TypeScript is a validator that takes two values and checks if they are numbers.
+      It uses unit tests to verify the correctness of the input data and calculates their sum if both are numbers.
+      In case the input data is not numeric, it displays an appropriate error message. This allows for automated testing and ensures the applications correctness in various scenarios.`,
+    images: [
+      "../assets/images/tests/numbers/test1.png",
+      "../assets/images/tests/numbers/test2.png",
+      "../assets/images/tests/numbers/test3.png",
+      "../assets/images/tests/numbers/test4.png",
+    ],
+  },
+]);
+</script>
 
 <style scoped lang="scss">
 .tests-list {
   margin-top: 5rem;
   @media (width >= 1024px) {
     margin-top: 10rem;
-  }
-}
-
-.tests-content {
-  display: grid;
-  grid-template-rows: 2fr 1fr 2fr 1fr;
-  grid-template-columns: 1fr;
-  align-items: center;
-  grid-template-areas:
-    "form"
-    "result"
-    "img"
-    "link";
-  gap: 1rem;
-  padding-bottom: 10rem;
-  border-bottom: 1px solid var(--text-dark);
-
-  @media (width >= 1024px) {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "form img"
-      "result link";
   }
 }
 </style>
