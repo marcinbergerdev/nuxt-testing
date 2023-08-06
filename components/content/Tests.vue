@@ -86,7 +86,6 @@ defineProps<{
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1rem;
 
     &__img {
       object-fit: fill;
