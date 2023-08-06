@@ -9,11 +9,9 @@
       <img class="test-images__img" v-for="img in images" :src="img" alt="test" />
     </article>
 
-    <NuxtLink
-      class="test-link"
-      href="https://github.com/marcinbergerdev/nuxt-verify/blob/main/pages/study.vue"
-      >check my code <u>here</u></NuxtLink
-    >
+    <NuxtLink class="test-link" href="https://unitytests.netlify.app/">
+      → check code here ←
+    </NuxtLink>
   </li>
 </template>
 
@@ -30,7 +28,7 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 10rem;
+  padding: 15rem 0;
   border-bottom: 1px solid var(--text-dark);
 
   @media (width >= 1024px) {

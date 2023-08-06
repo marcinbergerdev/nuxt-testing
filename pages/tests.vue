@@ -35,6 +35,11 @@ const tests = ref<Tests[]>([
 <style scoped lang="scss">
 .tests-list {
   margin-top: 5rem;
+
+  li:first-child {
+    padding-top: 0;
+  }
+
   @media (width >= 1024px) {
     margin-top: 10rem;
   }
