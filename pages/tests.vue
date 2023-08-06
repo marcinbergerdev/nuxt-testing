@@ -23,10 +23,10 @@ const tests = ref<Tests[]>([
       It uses unit tests to verify the correctness of the input data and calculates their sum if both are numbers.
       In case the input data is not numeric, it displays an appropriate error message. This allows for automated testing and ensures the applications correctness in various scenarios.`,
     images: [
-      "../assets/images/tests/numbers/test1.png",
-      "../assets/images/tests/numbers/test2.png",
-      "../assets/images/tests/numbers/test3.png",
-      "../assets/images/tests/numbers/test4.png",
+      "/images/tests/numbers/test1.png",
+      "/images/tests/numbers/test2.png",
+      "/images/tests/numbers/test3.png",
+      "/images/tests/numbers/test4.png",
     ],
   },
 ]);
