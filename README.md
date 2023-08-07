@@ -1,18 +1,23 @@
-in production...
+# Nuxt
+  the first project in Nuxt with a instructions for use and list of test.
+# Live here 👉 https://nuxtesting.netlify.app/
+
+## How it works?
+ - List of tests
+ - Test Images
+ - Check tests
+
+## Tech stack
+  - Nuxt
+  - TypeScript
 
 
-## Development Server
-# npm
+## Project setup
+```
 npm install
+```
 
+### Compiles and hot-reloads for development
+```
 npm run dev
-
-# pnpm
-pnpm install
-
-pnpm run dev
-
-# yarn
-yarn install
-
-yarn dev
+```
