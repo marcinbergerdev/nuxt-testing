@@ -102,7 +102,7 @@ defineProps<{
   font-size: 2rem;
 
   @media (width >= 1024px) {
-    width: 23rem;
+    width: 25rem;
     justify-self: center;
     text-align: center;
 
@@ -120,7 +120,7 @@ defineProps<{
     }
 
     &:hover::before {
-      width: 23rem;
+      width: 25rem;
       transition: 0.3s ease-in-out;
     }
   }
