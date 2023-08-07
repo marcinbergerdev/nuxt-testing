@@ -10,7 +10,7 @@
     </article>
 
     <NuxtLink class="test-link" href="https://unitytests.netlify.app/">
-      → check code here ←
+      → check example here ←
     </NuxtLink>
   </li>
 </template>
