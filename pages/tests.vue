@@ -19,7 +19,7 @@ interface Tests {
 const tests = ref<Tests[]>([
   {
     title: "Numbers Validation",
-    description: `The project in JavaScript/TypeScript is a validator that takes two values and checks if they are numbers.
+    description: `The project in JavaScript/TypeScript and Unity Testing: is a validator that takes two values and checks if they are numbers.
       It uses unit tests to verify the correctness of the input data and calculates their sum if both are numbers.
       In case the input data is not numeric, it displays an appropriate error message. This allows for automated testing and ensures the applications correctness in various scenarios.`,
     images: [
@@ -27,6 +27,21 @@ const tests = ref<Tests[]>([
       "/images/tests/numbers/test2.png",
       "/images/tests/numbers/test3.png",
       "/images/tests/numbers/test4.png",
+    ],
+  },
+
+  {
+    title: "Strings Validation",
+    description: `The project in JavaScript/TypeScript and Unity Testing: is a validator that takes that takes four strings as input. 
+      The validator performs comprehensive validation and conversion tasks: it matches and validates the provided strings against specific criteria.
+      Additionally, it transforms one of the input values labeled as 'age' into a numeric format. The validator then checks if all the conditions align successfully; 
+      if they do, it presents the user with the individual's information. However, if any of the conditions fail, it returns an error message, 
+      providing a reliable way to ensure data accuracy and prompt user feedback.`,
+    images: [
+      "/images/tests/strings/test1.png",
+      "/images/tests/strings/test2.png",
+      "/images/tests/strings/test3.png",
+      "/images/tests/strings/test4.png",
     ],
   },
 ]);
