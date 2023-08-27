@@ -23,7 +23,6 @@ interface Links {
 
 const links = ref<Links[]>([
   { path: "/", name: "home" },
-  { path: "/setup", name: "setup" },
   { path: "/tests", name: "tests" },
   { path: "/contact", name: "contact" },
   { path: "/login", name: "login" },

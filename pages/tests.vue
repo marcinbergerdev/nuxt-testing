@@ -44,6 +44,20 @@ const tests = ref<Tests[]>([
       "/images/tests/strings/test4.png",
     ],
   },
+  {
+    title: "Request Api Validation",
+    description: `The project in JavaScript/TypeScript and Unity Testing: "In my recent mini project developed using TypeScript, I created a simple web application focused on fetching animal images. 
+      Upon clicking the 'Fetch' button, the application utilizes the Fetch API to retrieve a collection of 10 captivating animal images. 
+      The TypeScript codebase ensures strong typing and enhances code quality. To ensure the reliability and accuracy of the application, 
+      I also implemented unit tests that validate the fetching mechanism and the appropriate display of animal images. This project not only allowed me to practice TypeScript and 
+      asynchronous programming but also underscored the importance of testing in maintaining robust software."`,
+    images: [
+      "/images/tests/apis/test1.png",
+      "/images/tests/apis/test2.png",
+      "/images/tests/apis/test3.png",
+      "/images/tests/apis/test4.png",
+    ],
+  },
 ]);
 </script>
 

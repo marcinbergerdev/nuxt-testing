@@ -21,7 +21,7 @@ const { path, name } = defineProps<{
 
 .desktop-nav,
 .mobile-nav {
-  li:nth-child(5) {
+  li:nth-last-child(2) {
     position: relative;
     &::before {
       content: "";
@@ -38,7 +38,7 @@ const { path, name } = defineProps<{
 }
 
 .desktop-nav {
-  li:nth-child(5) {
+  li:nth-last-child(2) {
     &::before {
       left: -1.5rem;
       width: 1px;
@@ -58,7 +58,7 @@ const { path, name } = defineProps<{
 }
 
 .mobile-nav {
-  li:nth-child(5) {
+  li:nth-last-child(2) {
     margin-top: 2rem;
     padding-top: 2rem;
     &::before {
