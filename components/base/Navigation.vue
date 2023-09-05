@@ -25,8 +25,6 @@ const links = ref<Links[]>([
   { path: "/", name: "home" },
   { path: "/tests", name: "tests" },
   { path: "/contact", name: "contact" },
-  { path: "/login", name: "login" },
-  { path: "/register", name: "signup" },
 ]);
 </script>
 
